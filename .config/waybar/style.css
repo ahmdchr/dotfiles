@@ -1,0 +1,142 @@
+@import 'colors/one-dark.css';
+
+*{
+    border: none;
+    border-radius: 0px;
+
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+
+}
+
+tooltip{
+    background: @black;
+    border: 1px solid @black;
+    border-radius: 12px;
+}
+
+tooltip label{
+    color: @blue;
+    padding: 6px;
+}
+
+#waybar {
+    background: transparent;
+}
+
+#workspaces {
+    background-color: @black;
+    padding: 5px 3px;
+    margin: 0 0 0 12px;
+    border-radius: 18px;
+    border: 1px solid @black;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 50px;
+    color: @blue;
+    background-color: @black;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active{
+    background-color: @blue;
+    color: @black;
+    min-width: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.urgent{
+    background-color: @red;
+    color: @black;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* General module styling */
+#tray,
+#network,
+#pulseaudio,
+#battery,
+#clock {
+    background-color: @black;
+    color: @blue;
+    min-width: 50px;
+    padding: 8px 14px;
+    margin: 4px 6px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect (smooth glow feeling) */
+#tray:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#clock:hover,
+#cpu:hover,
+#memory:hover {
+    border: 1px solid @blue;
+    background-color: #2a0b10;
+}
+
+/* Tray specific tweaks */
+#tray {
+    padding: 6px 8px;
+}
+
+#tray > .passive {
+    opacity: 0.6;
+}
+
+#tray > .needs-attention {
+    color: @blue;
+    border: 1px solid @blue;
+}
+
+/* Network states */
+#network.disconnected {
+    color: #555;
+}
+
+#network.linked {
+    color: @blue;
+}
+
+/* Pulseaudio (volume) */
+#pulseaudio.muted {
+    color: #555;
+}
+
+/* Battery states */
+#battery.warning {
+    color: #ffaa00;
+}
+
+#battery.critical {
+    color: #ff4444;
+}
+
+/* Clock (clean center feel) */
+#clock {
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+/* Optional: subtle spacing for right modules */
+#tray,
+#network,
+#pulseaudio,
+#battery {
+    margin-right: 10px;
+}

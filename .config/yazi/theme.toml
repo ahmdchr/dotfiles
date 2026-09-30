@@ -1,0 +1,65 @@
+[manager]
+cwd = { fg = "#ff4d6d", bold = true }
+
+# Hovered file
+hovered = { fg = "#ffffff", bg = "#ff4d6d", bold = true }
+
+# Selected files
+selected = { fg = "#ffffff", bg = "#ff85a1" }
+
+# Preview border
+preview = { border = "#ff4d6d" }
+
+# Directory
+directory = { fg = "#ff758f", bold = true }
+
+# Executable
+executable = { fg = "#ff99ac" }
+
+# Symlink
+symlink = { fg = "#ffb3c6", italic = true }
+
+# Permissions
+perm = { fg = "#ffccd5" }
+
+# File size
+size = { fg = "#ff8fa3" }
+
+# Date
+mtime = { fg = "#ffb3c6" }
+
+# Border
+border = { fg = "#ff4d6d" }
+
+[status]
+# Top bar
+separator_open = ""
+separator_close = ""
+
+mode_normal = { fg = "#ffffff", bg = "#ff4d6d", bold = true }
+mode_select = { fg = "#ffffff", bg = "#ff85a1", bold = true }
+mode_unset = { fg = "#ffffff", bg = "#ff758f", bold = true }
+
+# Progress / percentage
+progress_label = { fg = "#ffffff" }
+progress_normal = { fg = "#ff4d6d", bg = "#1a1a1a" }
+
+[pick]
+border = { fg = "#ff4d6d" }
+active = { fg = "#ffffff", bg = "#ff4d6d" }
+inactive = { fg = "#ff758f" }
+
+[input]
+border = { fg = "#ff4d6d" }
+title = { fg = "#ff758f" }
+value = { fg = "#ffffff" }
+
+[completion]
+border = { fg = "#ff4d6d" }
+active = { fg = "#ffffff", bg = "#ff4d6d" }
+inactive = { fg = "#ff758f" }
+
+[tasks]
+border = { fg = "#ff4d6d" }
+title = { fg = "#ff758f" }
+hovered = { fg = "#ffffff", bg = "#ff4d6d" }

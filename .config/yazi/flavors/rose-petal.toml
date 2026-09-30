@@ -1,0 +1,13 @@
+[flavor]
+name = "rose-petal"
+author = "you"
+
+[palette]
+background = "#1a1a1a"
+foreground = "#ffe5ec"
+
+red = "#ff4d6d"
+pink = "#ff85a1"
+rose = "#ff758f"
+soft = "#ffb3c6"
+light = "#ffccd5"

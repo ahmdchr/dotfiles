@@ -1,0 +1,14 @@
+# OS & Editor files
+.DS_Store
+*.swp
+*.swo
+*~
+*.log
+
+# Sensitive credentials & caches
+.cache/
+gh/
+credentials
+.netrc
+*.key
+*.pem
